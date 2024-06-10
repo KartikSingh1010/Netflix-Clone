@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/cacfadb7-c017-4318-85e4-7f46da1cae88/e43aa8b1-ea06-46a5-abe3-df13243e718d/IN-en-20240603-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+    z-index: -1; /* Ensures the overlay is behind other elements */
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(20, 20, 20, 0.8); /* Add opacity to make the background slightly visible */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .movies {
+    padding: 20px;
+  }
+  
+  .movies h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-list {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .movie-list img {
+    max-width: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .movie-list img:hover {
+    transform: scale(1.1);
+  }
+  .email{
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    font-size: 14px;
+  }
+  
